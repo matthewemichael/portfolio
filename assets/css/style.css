@@ -4,6 +4,11 @@ a {
     color: black;
 }
 
+a:hover {
+    color: black;
+    text-decoration: underline !important;
+}
+
 html {
     height: 100%;
 }
@@ -14,15 +19,39 @@ body {
     height: 100%;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: lightgrey;
-    text-align: center;
-    margin-bottom: 20px;
+.navbar {
+    background-color: transparent;
+}
+
+ul.navbar-nav {
+    margin-left: -10vw;
 }
 
 .section {
     height: 100%;
-    padding-top: 20px;
+    padding-top: 60px;
+}
+
+.section#home {
+    background-color: crimson;
+}
+
+.section#profile {
+    background-color: darkblue;
+}
+
+@media screen and (max-width: 767.98px) {
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar {
+        background-color: transparent;
+    }
+    .navbar-collapse {
+        background-color: white;
+        color: black;
+    }
+    ul.navbar-nav {
+        margin-left: 0;
+    }
 }

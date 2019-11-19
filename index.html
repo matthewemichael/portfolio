@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <nav>
-        <a class="nav" id="1" href="#">Section 1</a>
-        <a class="nav" id="2" href="#">Section 2</a>
-        <a class="nav" id="3" href="#">Section 3</a>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="#">Matt Michael</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav nav-link" id="home" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav nav-link" id="profile" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav nav-link" id="contact" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav nav-link" id="portfolio" href="#">Portfolio</a>
+            </li>
+            </ul>
+        </div>
     </nav>
-    <div class="section" id="1">
-        Section 1
+
+    <div class="section" id="home">
+        HOME
     </div>
-    <div class="section" id="2">
-        Section 2
+    <div class="section" id="profile">
+        PROFILE
     </div>
-    <div class="section" id="3">
-        Section 3
+    <div class="section" id="contact">
+        CONTACT
     </div>
-    
+    <div class="section" id="portfolio">
+        PORTFOLIO
+    </div>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
-    
+
 </body>
 </html>
