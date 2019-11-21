@@ -25,6 +25,10 @@ nav li {
     margin-right: 2vw;
 }
 
+nav a:hover {
+    color: #fff !important;
+  }
+
 nav.circle ul li a {
     position: relative;
     overflow: hidden;
@@ -48,12 +52,23 @@ nav.circle ul li a:after {
 }
 
 nav.circle ul li a:hover:after {
-    -webkit-animation: circle 1.5s ease-in forwards;
-    animation: circle 1.5s ease-in forwards;
+    -webkit-animation: circle 1s ease-in forwards;
+    animation: circle 1s ease-in forwards;
 }
 
 ul.navbar-nav {
     margin-left: -10vw;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+    font-size: 1.75em;
+    text-shadow:
+    -0.5px -0.5px 0 #acacac,
+    0.5px -0.5px 0 #5e5e5e,
+    -0.5px 0.5px 0 #5e5e5e,
+    0.5px 0.5px 0 #5e5e5e;
+    
 }
 
 a:hover {
@@ -62,9 +77,15 @@ a:hover {
 
 .btn-default {
     width: 100px;
-    color: #ffffff;
-    background-color: #118888;
+    color: #f8f8f8;
+    background-color: rgba(248, 148, 122);
     margin-bottom: 3%;
+}
+
+.btn-default:hover {
+    color: #5e5e5e !important;
+    background-color: rgba(248, 148, 122, 0.75);
+ ;
 }
 
 .section {
@@ -75,6 +96,11 @@ a:hover {
 .section#home{
     background-image: url("../images/js-bg2.png");
     background-size: cover;
+}
+
+.section#portfolio {
+    /* background: #7adef8; */
+    padding-top: 55px;
 }
 
 .section#portfolio .container {
@@ -99,6 +125,10 @@ a:hover {
     margin: 2vh;
 }
 
+#portfolio a {
+    color: rgba(245, 245, 245, 0.8);
+}
+
 #portfolio .container-fluid {
     max-width: 1920px;
 }
@@ -120,20 +150,45 @@ a:hover {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(244, 98, 58, 0.9);
+    background: rgba(248, 148, 122, 0.9);
     transition: opacity 0.25s ease;
+    text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+    background: rgba(248, 148, 122, 1);
     text-align: center;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
     font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
+}  
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category a:hover {
+    color: #0985a5;
+    animation: pulsate 2.5s ease-out;
+    animation-iteration-count: infinite;
+    -webkit-animation: pulsate 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.1;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
@@ -153,54 +208,47 @@ a:hover {
 footer img {
     max-width: 100px;
     height: auto;
-
 }
-
-/* .project {
-    float: left;
-    position: relative;
-    width: 100%;
-    padding: 0 !important;
-}
-  
-.project-title {
-    float: left;
-    position: relative;
-    top: -100px;
-    width: 100%;
-    height: 65px;
-    padding-top: 5px;
-    background-color: #343a40;
-    border: 1px solid #8899aa;
-    color: #ffffff;
-    text-align: center;
-    letter-spacing: 0.6px;
-}
-
-.project-title a {
-    color: #118888
-}
-
-.project-title a:hover {
-    color: #f2f2f2;
-    text-decoration: none;
-}
-
-hr {
-    padding: 0;
-    margin: 0 auto;
-    width: 50%;
-    border: 0.5px solid #8899aa;
-    
-} */
 
 @media screen and (max-width: 767.98px) {
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank
+     {
+        opacity: 1;
+        max-height: 80px;
+        bottom: 7vh;
+    }
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category a {
+        color: #0985a5 !important;
+    }
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }  
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+        font-size: 1.5rem;
+    }
+  
+}
+
+@media screen and (max-width: 991.98px) {
     ul.navbar-nav {
         margin-left: 0 !important;
     }
     .navbar-toggler {
         border: none;
         outline: none !important;
+    }
+    /* nav li {
+        padding-left: 2vw;
+    } */
+}
+
+@media screen and (max-width: 1199.98px) {
+    .section#portfolio {
+        background: none;
     }
 }
 
@@ -214,11 +262,11 @@ hr {
       margin: auto;
       height: 1px;
       z-index: -1;
-      background: #eee;
+      background: #f9a792;
       border-radius: 100%;
     }
     100% {
-      background: rgb(214, 214, 214);
+      background: rgb(248, 148, 122);
       height: 5000%;
       width: 5000%;
       z-index: -1;
@@ -228,5 +276,17 @@ hr {
       right: 0;
       margin: auto;
       border-radius: 0%;
+    }
+}
+
+@keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
     }
 }
