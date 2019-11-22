@@ -128,8 +128,20 @@ a:hover {
     max-width: 100px;
     left: 50%;
     margin-left: -50px;
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation: pulsate 3s ease-in-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.3;
 }
 
+.down-arrow:hover {
+    animation: pulsate 0s ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation: pulsate 0s ease-in-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 1;
+}
 .section {
     min-height: 100vh;
     padding-top: 60px;
@@ -286,6 +298,7 @@ footer img {
         line-height: 2rem;
         padding-top: 0;
     }
+    
 }
 @media screen and (min-width: 768px) {
     .jumbotron p.name { font-size: 5rem; }
