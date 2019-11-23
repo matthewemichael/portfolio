@@ -15,52 +15,15 @@ body {
     margin-top: 2vh;
 }
 
-/* .navbar {
-    background-color: #bebebe !important;
-    -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.5);
-    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.5);
-} */
-
-/* nav li {
-    margin-left: 2vw;
-    margin-right: 2vw;
-} */
-
 nav a:hover {
-    color: #fff !important;
-  }
-
-nav.circle ul li a {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    color: #7adef8 !important;
 }
 
-nav.circle ul li a:after {
-    display: block;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '.';
-    color: transparent;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background: transparent;
+.navbar #navbarNav ul {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: lighter;
 }
-
-nav.circle ul li a:hover:after {
-    -webkit-animation: circle 1s ease-in forwards;
-    animation: circle 1s ease-in forwards;
-}
-
-/* ul.navbar-nav {
-    margin-left: -10vw;
-} */
 
 .navbar-brand {
     padding: 0 !important;
@@ -275,6 +238,12 @@ footer img {
     height: auto;
 }
 
+@media screen and (max-height: 450px) {
+    .down-arrow{
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 575.98px) {
     #portfolio .container-fluid .portfolio-box img {
         border: 0.5px solid white;
@@ -339,9 +308,6 @@ footer img {
     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
         font-size: 1.5rem;
     }
-    /* nav li {
-        padding-left: 2vw;
-    } */
 }
 
 @media screen and (min-width: 992px) {
@@ -354,33 +320,6 @@ footer img {
 @media screen and (max-width: 1199.98px) {
     .section#portfolio {
         background: none;
-    }
-}
-
-@keyframes circle {
-    0% {
-      width: 1px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      height: 1px;
-      z-index: -1;
-      background: #f9a792;
-      border-radius: 100%;
-    }
-    100% {
-      background: rgb(248, 148, 122);
-      height: 5000%;
-      width: 5000%;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      border-radius: 0%;
     }
 }
 
