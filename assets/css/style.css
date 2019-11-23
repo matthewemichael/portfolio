@@ -63,6 +63,7 @@ a:hover {
  ;
 }
 
+p.section-heading,
 .jumbotron p.name {
     font-weight: 200;
     font-size: 80px;
@@ -255,13 +256,38 @@ footer img {
         left: 50%;
         margin-left: -25px;
     }
+    p.name{
+        margin-left: -10px !important;
+        line-height: 3.5rem !important;
+        margin-bottom: 3vh;
+    }
+    p.heading{
+        margin-left: -10px !important;
+    }
+    p.section-heading {
+        font-size: 2rem !important;
+        margin-top: -10vh !important;
+        margin-bottom: 0 !important;
+    }
+
+    .row #connect img {
+        margin-top: 5vh !important;
+        max-width: 40px !important;
+        height: auto;
+    }
+
+    .form-group textarea {
+        max-height: 10vh !important;
+    }
     
 }
 
 @media screen and (max-width: 767.98px) {
+    p.section-heading,
     .jumbotron p.name { 
         font-size: 3.5rem;
     }
+    
     .jumbotron p.heading { 
         font-size: 1.75rem;
         line-height: 2rem;
