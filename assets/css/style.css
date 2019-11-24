@@ -7,7 +7,6 @@ body {
     padding: 0;
     height: 100%;
     position: relative;
-    
 }
 
 .container {
@@ -23,17 +22,6 @@ nav a:hover {
     text-align: center;
     font-variant: small-caps;
     font-weight: lighter;
-}
-
-.navbar-brand {
-    padding: 0 !important;
-    font-size: 1.75em;
-    text-shadow:
-    -0.5px -0.5px 0 #acacac,
-    0.5px -0.5px 0 #5e5e5e,
-    -0.5px 0.5px 0 #5e5e5e,
-    0.5px 0.5px 0 #5e5e5e;
-    
 }
 
 .navbar-toggler {
@@ -61,6 +49,10 @@ a:hover {
     color: #5e5e5e !important;
     background-color: rgba(248, 148, 122, 0.75);
  ;
+}
+
+.section#contact p.section-heading {
+    margin-top: -5vh;
 }
 
 p.section-heading,
@@ -222,7 +214,6 @@ p.section-heading,
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
 }
-
 
 .footer {
     left: 0;
