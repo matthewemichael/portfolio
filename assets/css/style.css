@@ -51,8 +51,13 @@ a:hover {
  ;
 }
 
-.section#contact p.section-heading {
+p.section-heading {
     margin-top: -5vh;
+}
+
+.section#portfolio p.section-heading {
+    margin-left: 11vw;
+    margin-bottom: 2vh;
 }
 
 p.section-heading,
@@ -270,7 +275,10 @@ footer img {
     .form-group textarea {
         max-height: 10vh !important;
     }
-    
+    .section#portfolio p.section-heading {
+        margin-left: 11vw;
+        margin-bottom: -2vh !important;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
