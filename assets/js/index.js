@@ -1,11 +1,4 @@
-$('.nav').click(function() {
-    var id = $(this).attr('id');
-    $('html, body').animate({
-        scrollTop: ($('#' + id + '.section').offset().top)
-    }, 1000);
-});
-
-$('.down-arrow').click(function() {
+$('.down-arrow, .nav').click(function() {
     var id = $(this).attr('id');
     $('html, body').animate({
         scrollTop: ($('#' + id + '.section').offset().top)
@@ -27,7 +20,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    $(".navbar").hide();
+    $('.navbar').hide();
     $(function () {
         $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
