@@ -168,7 +168,11 @@ p.section-heading,
     padding-top: 54px;
 }
 
-.section#portfolio p.section-heading,
+.section#portfolio p.section-heading {
+    margin-left: 11vw;
+    margin-bottom: 2vh;
+}
+
 .section#profile p.section-heading {
     margin-left: 11vw;
     margin-bottom: 2vh;
