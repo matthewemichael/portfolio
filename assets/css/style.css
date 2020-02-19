@@ -209,6 +209,8 @@ p.section-heading,
     margin: 2vh;
 }
 
+/* ----------------- PORTFOLIO SECTION ----------------- */
+
 #portfolio a {
     color: rgba(245, 245, 245, 0.8);
 }
@@ -224,7 +226,6 @@ p.section-heading,
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
@@ -234,12 +235,47 @@ p.section-heading,
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(248, 148, 122, 0.9);
+    background: rgba(43, 43, 43, 0.99);
     transition: opacity 0.25s ease;
-    text-align: center;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank {
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-description {
+    color: #f9a792;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}  
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links a {
+    color:  #00ccff !important;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links a:hover {
+    color: #0099cc !important;
+    cursor: pointer !important;
+}
+
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-icons img {
+    display: none;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+/* #portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,33 +289,7 @@ p.section-heading,
     color: #fff;
     background: #7adef8;
     text-align: center;
-}
-
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}  
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category a {
-    color: #0985a5 !important;
-}
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category a:hover {
-    color: #0985a5;
-    animation: pulsate 1s ease-in-out;
-    animation-iteration-count: infinite;
-    -webkit-animation: pulsate 1s ease-in-out;
-    -webkit-animation-iteration-count: infinite; 
-    opacity: 0.1;
-}
-
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-    font-size: 2rem;
-}
-
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-    opacity: 1;
-}
+} */
 
 .footer {
     left: 0;
@@ -410,7 +420,7 @@ footer img:hover {
     #portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank
      {
         opacity: 1;
-        max-height: 80px;
+        max-height: 150px;
         bottom: 7vh;
     }
     #portfolio .container-fluid .portfolio-box .portfolio-box-caption#blank
@@ -421,14 +431,23 @@ footer img:hover {
         background: #f9a792;
     }
     
-    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links {
         font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-size: 1rem;
         font-weight: 600;
-        text-transform: uppercase;
     }  
     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
         font-size: 1.5rem;
+    }
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-description {
+        display: none;
+    }
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-icons img {
+        display: inline-flex;
+        margin-right: 2px;
+        margin-top: 10px;
+        height: 25px;
+        width: auto;
     }
 }
 
