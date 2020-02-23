@@ -235,18 +235,34 @@ p.section-heading,
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(43, 43, 43, 0.99);
+    background: rgba(43, 43, 43, 0.95);
     transition: opacity 0.25s ease;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
     font-size: 2rem;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name::after {
+    content: "";
     border-bottom: 1px solid #fff;
-    padding-bottom: 3px;
+    display: block;
+    margin: 5px auto;
+    width: 50%;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-description {
     color: #f9a792;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-description::after {
+    content: "";
+    border-bottom: 1px solid #fff;
+    display: block; 
+    margin: 5px auto;
+    width: 50%;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links {
@@ -254,8 +270,7 @@ p.section-heading,
     font-size: 1.3rem;
     font-weight: 600;
     font-variant: small-caps;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 3px;
+   
 }  
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links a {
     color:  #00ccff !important;
@@ -436,6 +451,14 @@ footer img:hover {
         font-size: 1rem;
         font-weight: 600;
     }  
+    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-links::after {
+        content: "";
+        border-bottom: 1px solid #fff;
+        display: block;
+        
+        margin: 5px auto;
+        width: 50%;
+    }
     #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
         font-size: 1.5rem;
     }
